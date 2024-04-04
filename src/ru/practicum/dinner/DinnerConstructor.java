@@ -5,10 +5,8 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class DinnerConstructor {
-    HashMap<String, ArrayList<String>> dishs;
-    public DinnerConstructor(){
-        dishs = new HashMap<>();
-    }
+    HashMap<String, ArrayList<String>> dishs = new HashMap<>();
+
     void addDish(String dishType, String dishName){
         if(dishs.containsKey(dishType)){ // проверяем наличие типа в списке и добавляем наименование блюда
             dishs.get(dishType).add(dishName);

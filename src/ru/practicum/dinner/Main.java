@@ -42,7 +42,6 @@ public class Main {
         System.out.println("Введите название блюда:");
         String dishName = scanner.nextLine();
         dc.addDish(dishType, dishName); //После ввода данных переходим к выполнению метода который добавляет блюдо
-        // добавьте новое блюдо
     }
 
     private static void generateDishCombo() {
@@ -66,7 +65,6 @@ public class Main {
                 nextItem = scanner.nextLine(); //если такого типа блюда нет мы об этом сообщаем и ждем нового ввода
             }
         }
-
         dc.generateOfCombos(numberOfCombos, typeOfCombos);
     }
 }
